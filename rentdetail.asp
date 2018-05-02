@@ -139,6 +139,7 @@ set prs=nothing
                 <p class="ptxt"><!--<img src="xgwl/img/rent/bitmap2.png">-->
                 <!-- 百度地图API-->
  <script src="http://api.map.baidu.com/api?v=1.2" type="text/javascript"></script>
+ 
     <script type="text/javascript">
     function initialize() {
         //创建地图实例
@@ -155,7 +156,7 @@ set prs=nothing
     window.onload = initialize;
     </script>
 <!-- 百度地图地图容器-->
-    <div id="map" style="width:960px;height:500px;margin-bottom:50px;"></div>
+    <div id="map" style="margin-bottom:50px;"></div>
                 </p>
             </div>
         </div>

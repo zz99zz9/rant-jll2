@@ -158,7 +158,7 @@ rs.Open sql,conn,1,1%>
               </div>
                 <div class="info">
                    <p class="tit"><%=rs("entitle")%></p>
-                   <p class="price">Rant:<%if rs("jgzj")=0 then%>undetermined<%else%>¥<%=rs("jgzj")*10%>k+<%end if%></p>
+                   <p class="price"><%if rs("jgzj")=0 then%>undetermined<%else%>¥<%=rs("jgzj")*10%>k+<%end if%>/monthly</p>
                       <p class="txt">Type：<%call showName("class_lb",rs("clbid"),"cid","cnameen")%><br>Area：<%call showName("Table_ProBigClass",rs("bigclassid"),"bigclassid","bigclassnameen")%>，<%call showName("Table_ProSmallClass",rs("smallclassid"),"smallclassid","smallclassnameen")%><br>
                    Address：<%x1=split(rs("Product_Id"),"|")%><%=x1(1)%></p>
                    

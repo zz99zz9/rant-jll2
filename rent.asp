@@ -141,7 +141,7 @@ rs.Open sql,conn,1,1%>
     response.write("暂无内容")
   '  response.write sql
     else
-    rs.PageSize=10 '设置页码
+    rs.PageSize=15 '设置页码
     pagecount=rs.PageCount '获取总页码
     page=int(page) '接收页码
     if page<=0 then page=1 '判断
@@ -158,7 +158,7 @@ rs.Open sql,conn,1,1%>
               </div>
                 <div class="info">
                    <p class="tit"><%=rs("title")%></p>
-                   <p class="price">月租金<%if rs("jgzj")=0 then%>价格待定<%else%>¥<%=rs("jgzj")%>万起<%end if%></p>
+                   <p class="price"><%if rs("jgzj")=0 then%>价格待定<%else%><%=rs("jgzj")%>万起<%end if%>/月</p>
                       <p class="txt">类型：<%call showName("class_lb",rs("clbid"),"cid","cname")%><br>区域：<%=rs("bigclassname")%>，<%=rs("smallclassname")%><br>
                    地址：<%x1=split(rs("Product_Id"),"|")%><%=x1(0)%></p>
                    

@@ -18,7 +18,7 @@ if id="" then
  d=rs("Description")
  k=rs("Keywords")
  %>
-<!--#include file="inc/header.asp"-->
+<!--#include file="inc/enheader.asp"-->
     <link rel="stylesheet" href="xgwl/css/5.css"/>
         <style>
         .ninfo .ntxt{border-top:0px;}
@@ -33,7 +33,7 @@ if id="" then
                 <div class="finfo">
                         <p class="tit en">
                             <%=rs("entitle")%>
-                            <span class="price en"><%=rs("jgzj")*10%><%if rs("jgjj")<>"" then%>- <%=rs("jgjj")*10%><%end if%> k/monthly</span>
+                            <span class="price en"><%=rs("jgzj")*10%><%if rs("jgjj")<>"" then%>-<%=rs("jgjj")*10%><%end if%>k/monthly</span>
                         </p>
                         <p class="txt en">
                                 <%x1=split(rs("Product_Id"),"|")%><%=x1(1)%> <span class="right"><%call showName("class_lb",rs("clbid"),"cid","cnameen")%></span>
@@ -129,7 +129,7 @@ set prs=nothing
 <div class="part1">
         <div class="container container2 ">
             <div class="row mb20">
-                <p class="ptit">information</p>
+                <p class="ptit">Information</p>
                 <p class="ptxt"><%=rs("content1")%>
                 </p>
             </div>
@@ -159,7 +159,7 @@ set prs=nothing
     window.onload = initialize;
     </script>
 <!-- 百度地图地图容器-->
-    <div id="map" style="width:960px;height:500px;margin-bottom:50px;"></div>
+    <div id="map" style="margin-bottom:50px;"></div>
                 </p>
             </div>
         </div>
@@ -249,4 +249,4 @@ end if
     
 </div>
 </div>
-<!--#include file="inc/footer.asp"-->
+<!--#include file="inc/enfooter.asp"-->

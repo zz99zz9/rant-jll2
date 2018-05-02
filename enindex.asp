@@ -168,13 +168,13 @@ rs.Open sql,conn,1,1%>
 
             <!--循环开始-->
           <div class="swiper-slide">
-              <a class="bor tra" href="enrentdetail.asp">
+              <a class="bor tra" href="enrentdetail.asp?id=<%=rs("articleid")%>">
               <div class="pic " style="background-image: url('<%=rs("defaultpicurl")%>');background-size:cover;">
                     <div class="pmask tra"><span>Detail</span></div>
             </div>
               <div class="info">
                  <p class="tit"><%=rs("entitle")%></p>
-                 <p class="price">Rent:<%if rs("jgzj")=0 then%>undetermined<%else%>¥<%=rs("jgzj")*10%>k+<%end if%></p>
+                 <p class="price"><%if rs("jgzj")=0 then%>undetermined<%else%><%=rs("jgzj")*10%>k+<%end if%>/monthly</p>
                     <p class="txt">Type：<%call showName("class_lb",rs("clbid"),"cid","cnameen")%><br>Area：<%call showName("Table_ProBigClass",rs("bigclassid"),"bigclassid","bigclassnameen")%>，<%call showName("Table_ProSmallClass",rs("smallclassid"),"smallclassid","smallclassnameen")%><br>
                    Address：<%x1=split(rs("Product_Id"),"|")%><%=x1(1)%></p>
                  

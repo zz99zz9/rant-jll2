@@ -35,7 +35,7 @@
             <a class="navbar-brand" href="/guonei/"><img src="xgwl/img/logo.svg" /></a>  </div>
         <div class="collapse navbar-collapse" id="example-navbar-collapse">
             <ul class="nav navbar-nav XGnav" id=".pc-nav">
-                <li class="active XGli"><a href="http://www.jllresidential.cn/guonei/index.asp" class="s_link2">首页</a></li>
+                <li class="active XGli"><a href="http://www.jllresidential.cn/guonei/" class="s_link2">首页</a></li>
                 <li class="XGli"><a href="http://www.jllresidential.cn/guonei/newhouse.asp" class="s_link2">新房 </a></li>
                  <li class="XGli"><a href="index.asp" class="s_link2">租赁</a></li>
                  <li class="XGli"><a href="http://www.jllresidential.cn/guonei/entrust.asp" class="s_link2">个人委托</a></li>

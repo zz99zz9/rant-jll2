@@ -21,7 +21,7 @@ Copyright © 2015-2017 Jones Lang <span class='hidden-xs'>LaSalle, IP, Inc. All 
 <li class="se2 b_h"><div class="se2hover"></div></li>
 <li class="se3 b_h" onclick="window.location.href='tel:4008181133';"><a href='tel:4008181133'><div class="se3hover"></div></a></li>
 </ul>
-<div class="footerbtn hidden-lg hidden-md hidden-sm "><a href="tel:400-818-1133">Call us</a><a href="javascript:openfrom('20165new.pdf');">Free inquiry</a></div>
+<!--<div class="footerbtn hidden-lg hidden-md hidden-sm "><a href="tel:400-818-1133">Call us</a><a href="javascript:openfrom('20165new.pdf');">Free inquiry</a></div>-->
 <!--底部加载-->
 
 <script src="xgwl/js/lib/jquery.js"></script>

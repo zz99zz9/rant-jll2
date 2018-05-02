@@ -122,7 +122,7 @@ tdkid=1
         <div class="swiper-wrapper">
 
 <%set rs=Server.CreateObject("ADODB.Recordset")
-sql="select * from [Table_Product] where Passed=true"
+sql="select * from [Table_Product] where Passed=true and elite=true"
 if bc<>0 and bc<>"" then sql=sql+" and bigclassid="&bc
 if sc<>0 and sc<>"" then sql=sql+" and smallclassid="&sc
 if fj<>0 and fj<>"" then sql=sql+" and cfjid='"&fj&"'"
@@ -168,13 +168,13 @@ rs.Open sql,conn,1,1%>
 
             <!--循环开始-->
           <div class="swiper-slide">
-              <a class="bor tra" href="rentdetail.asp">
+              <a class="bor tra" href="rentdetail.asp?id=<%=rs("articleid")%>">
               <div class="pic " style="background-image: url('<%=rs("defaultpicurl")%>');background-size:cover;">
                     <div class="pmask tra"><span>了解详情</span></div>
             </div>
               <div class="info">
                  <p class="tit"><%=rs("title")%></p>
-                 <p class="price">月租金<%if rs("jgzj")=0 then%>价格待定<%else%>¥<%=rs("jgzj")%>万起<%end if%></p>
+                 <p class="price"><%if rs("jgzj")=0 then%>价格待定<%else%><%=rs("jgzj")%>万起<%end if%>/月</p>
                     <p class="txt">类型：<%call showName("class_lb",rs("clbid"),"cid","cname")%><br>区域：<%=rs("bigclassname")%>，<%=rs("smallclassname")%><br>
                    地址：<%x1=split(rs("Product_Id"),"|")%><%=x1(0)%></p>
                  
